@@ -1,0 +1,78 @@
+.container {
+    background-color: #000;
+    color: #fff;
+    font-size: 40px;
+    
+}
+.count {
+    position: relative;
+    text-align: center;
+    align-content: center;
+    height: 300px;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  animation-timing-function: ease-in-out;
+  animation-name: hiding;
+  animation-duration: 1s;
+
+}
+
+@keyframes hiding {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+}
+
+#timer9 {
+    animation-delay: 1s;
+  }
+  
+#timer8 {
+  animation-delay: 2s;
+}
+
+#timer7 {
+  animation-delay: 3s;
+
+}
+
+#timer6 {
+  animation-delay: 4s;  
+}
+
+#timer5 {
+  animation-delay: 5s;
+
+}
+
+#timer4 {
+  animation-delay: 6s;
+}
+
+#timer3 {
+  animation-delay: 7s;
+}
+
+#timer2 {
+  animation-delay: 8s;
+}
+
+#timer1 {
+  animation-delay: 9s;
+}
+
+#timer0 {
+  animation-delay: 10s;
+
+}
+
+

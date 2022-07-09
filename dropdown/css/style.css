@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+
+    margin: 40px;
+}
+.btn,
+.accordion-button:focus,
+.accordion-button:checked {
+   
+    color: orange;
+    background-color: rgba(128, 128, 128, 0.093);
+
+}
+.btn:hover {
+   
+    color: gray;
+    background-color: rgba(128, 128, 128, 0.093);
+}
+.container {
+    margin-top: 30px;
+}
+.accordion-button {
+    text-align: center;
+    display: inline-block;
+}
+.accordion-button:not(.collapsed) {
+    color: orange;
+    background-color:rgba(128, 128, 128, 0.093) ;
+}

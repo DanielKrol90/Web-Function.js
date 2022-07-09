@@ -1,0 +1,44 @@
+form#newsletter-form {
+    background-color: rgb(154,186,27
+    );
+    font-size: 20px;
+    color: white;
+    padding: 30px;
+    width: 25%;
+}
+
+#errors {
+    color: red;
+    padding-left: 20px;
+}
+
+input, label {
+    display: inline-block;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+input[type="text"], input[type=email] {
+    height: 20px;
+    width: 80%;
+}
+
+button[type="submit"] {
+    background-color: #ff9300;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    border: 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xoqryzdo" method="post">
+        <fieldset id="fs-frm-inputs">
+            <label for="first-name">Imię</label><br>
+            <input type="text" name="name" id="first-name" placeholder="Tu wpisz twoje Imię" required><br>
+            <label for="last-name">Nazwisko</label><br>
+            <input type="text" name="sur-name" id="last-name" placeholder="Tu wpisz twoje Nazwisko" required><br>
+            <label for="telephone">Telefon</label><br>
+            <input type="tel" name="telephone" id="telephone" placeholder="Tu wpisz swój numer telefonu" required><br>
+            <label for="email-address">Skrzynka EMail</label><br>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@domena.xyz" required>
+            <fieldset id="fs-frm-selects">
+                <label for="city-select"> Wybierz Miasto gdzie chcesz odbyć szkolenie.</label><br>
+                <select name="City" id="city-select" required size="5">
+                        <option> Kraków</option>
+                        <option> Warszawa</option>
+                        <option> Rzeszów</option>
+                        <option> Zakopane</option>
+                        <option> Sosnowiec</option>
+                </select>
+            </fieldset>
+            <fieldset id="fs-radio-select">
+                <input type="radio" id="sex-male" name="sex">
+                <label for="sex-male">Mężczyzna</label><br>
+                <input type="radio" id="sex-female" name="sex">
+                <label for="sex-female">Kobieta</label>
+            </fieldset>
+            <fieldset id="fs-checkbox">
+                <input type="checkbox" id="apply-id-check" name="apply-id-check">
+                <label for="apply-id-check"> Zgoda na przetwarzanie Twoich danych osobowych</label><br>
+            </fieldset>
+            <label for="message">Masz jakieś pytania?</label><br>
+            <textarea rows="3" name="message" id="message" placeholder="Tu wpisz swoje uwagi."
+                required="">
+                </textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+        </fieldset>
+        <input type="submit" value="Send Responses">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form autocomplete="on">
+        <fieldset>
+            <legend>Dane Klienta</legend>
+            <label for="first-name">Imię</label><br>
+            <input type="text" name="name" id="first-name" placeholder="Imię" autofocus required><br>
+            <label for="telephone">Telefon</label><br>
+            <input type="tel" name="telephone" id="telephone" placeholder="0-123-456-7899"  
+                    pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required ><br>
+            <label for="email-address">Skrzynka EMail</label><br>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@domena.xyz" multiple required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Książki</legend>
+            <input list="books-list" name="books-names">
+            <datalist id="books-list">
+                <option value="Sci-Fi">
+                <option value="Romans">
+                <option value="Horror">
+                <option value="Komedia">
+                <option value="Brazylijska Telenovela">
+              </datalist>
+
+            <label for="quantity">Ilość Zamówienia</label>
+            <input type="number" name="quantity" id="quantity" placeholder="Ilość od 1 do 5" min="1" max="5" required><br>
+        </fieldset>
+
+        <input type="submit" value="Send Responses">
+    </form>
+</body>
+
+</html>
